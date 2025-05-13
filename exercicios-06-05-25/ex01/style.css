@@ -1,0 +1,26 @@
+body{
+    font-family: Arial Narrow;
+   
+}
+
+.container-form{
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    padding-bottom: 1%;
+}
+
+p{
+    font-family: Arial;
+}
+
+input{
+
+}
+
+table, th, td {
+    border: 1px solid gray;
+    border-radius: 1%;
+}
