@@ -3,15 +3,22 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Bem vindo</h1>
-        <div class="container-form">
-            <form action="consuMedio.php" method="POST">
-                <label for="dist">Digite a distância percorrida:</label><br>
-                <input type="text" name="dist" id="dist"><br>
-                <label for="combus">Insira o total de combustível:</label><br>
-                <input type="text" name="combus" id="combus">
-                <input type="submit">
-            </form>
-        </div>
+        <header>
+            <h1>Consumo Médio</h1>
+        </header>   
+        <section>
+            <div class="container-form">
+                <form action="consuMedio.php" method="POST">
+                    <label for="dist">Digite a distância percorrida:</label>
+                    <input type="text" name="dist" id="dist"><br>
+                    <label for="combus">Insira o total de combustível:</label>
+                    <input type="text" name="combus" id="combus"><br>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+    <footer>
+        <p>&copy; ArthurOliCode DB</p>
+    </footer>
     </body>
 </html>

@@ -37,8 +37,5 @@ p{
 table, th, td {
     border: 1px solid gray;
     border-radius: 1%;
-}
-
-label{
     font-size: medium;
 }
