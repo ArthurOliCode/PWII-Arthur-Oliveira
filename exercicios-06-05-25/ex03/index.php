@@ -10,15 +10,22 @@
             <h1>Volume</h1>
         </header>
         <section>
-            <p>Este programa irá calcular a área de um trápezio, digite dois valores: </p>
+            <p>Este programa irá calcular a área de um trápezio, digite dois valores:
+            </p>
             <div class="container-Form">
                 <form action="area.php" method="POST">
-                    <label for="altura">Insira a altura (h): </label>
-                    <input type="text" name="altura" id="altura"><br>
-                    <label for="baseM">Insira a base maior (B): </label>
-                    <input type="text" name="baseM" id="baseM"><br>
-                    <label for="baseMe">Insira a base maior (b): </label>
-                    <input type="text" name="baseMe" id="baseMe"><br>
+                    <label for="altura">Insira a altura (h):
+                    </label>
+                    <input type="text" name="altura" id="altura">
+                    <br>
+                    <label for="baseM">Insira a base maior (B):
+                    </label>
+                    <input type="text" name="baseM" id="baseM">
+                    <br>
+                    <label for="baseMe">Insira a base maior (b):
+                    </label>
+                    <input type="text" name="baseMe" id="baseMe">
+                    <br>
                     <input type="submit">
                 </form>
             </div>
