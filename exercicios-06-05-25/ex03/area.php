@@ -25,9 +25,9 @@
                     <th>Área</th>
                 </tr>
                 <tr>
-                    <td><?php echo $_POST["altura"] ?>altura </td>
-                    <td><?php echo $_POST["baseM"] ?>Base Maior </td>
-                    <td><?php echo $_POST["baseMe"] ?>Base Menor </td>
+                    <td><?php echo $_POST["altura"] ?>m</td>
+                    <td><?php echo $_POST["baseM"] ?>m</td>
+                    <td><?php echo $_POST["baseMe"] ?>m</td>
                     <td><?php echo $area?>m²</td>
                 </tr>
             </table>
