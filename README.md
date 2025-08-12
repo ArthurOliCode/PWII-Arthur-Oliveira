@@ -62,7 +62,7 @@ Feito isto, para adicionar as alterações e realizar commits, basta utilizar es
 
 	Caso você não possua o PHP instalado, basta seguir  o seguinte comando no Windows Power: 
 	
-	`# Run as administrator...
+`
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))` 
 
 - Instalação do Laravel 
