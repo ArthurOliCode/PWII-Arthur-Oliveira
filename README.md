@@ -80,9 +80,9 @@ Em seu framework de preferência utilize o comando:
 
 Tendo a aplicação já criada, você poderá iniciar um local de desenvolvimento para o Laravel utilizando o comando `dev` do Composer.
 
-`cd example-app
-npm install && npm run build
-composer run dev` 
+`cd example-app`
+`npm install && npm run build`
+`composer run dev` 
 
 
 ---
