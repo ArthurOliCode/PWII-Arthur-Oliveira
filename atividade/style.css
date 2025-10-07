@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(19, 29, 72);
+}
+header {
+    color: whitesmoke;
+    text-align: center;
+}
+section {
+    background-color: rgb(37, 50, 109);
+    border-radius: 20%;
+    text-align: center;
+    width: 500px;
+    padding: 15px;
+    margin: auto;
+    color: whitesmoke;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+input {
+    padding-bottom: 1em;
+}
