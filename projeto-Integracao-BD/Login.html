@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Usuário</title>
+    <!-- Carregamento do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Cor de Fundo: Azul escuro, próximo do Royal Blue, quase preto (#00004d) */
+        body {
+            background-color: #00004d; 
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Ajuste do foco para melhor acessibilidade */
+        input:focus {
+            border-color: #6366f1 !important; /* Indigo 500 */
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.5) !important;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'form-dark-blue': '#1e3a8a', /* Azul escuro sutil (Dark Blue-900) para o formulário */
+                        'button-blue': '#3b82f6', /* Azul vibrante para o botão */
+                        'button-blue-hover': '#2563eb',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased text-gray-100">
+
+    <!-- Container Centralizado (usando Grid) -->
+    <div class="min-h-screen grid place-items-center p-4">
+        
+        <!-- Cartão do Formulário (Form Box) -->
+        <div class="w-full max-w-sm p-8 bg-slate-800 rounded-xl shadow-2xl border border-slate-700/50">
+            
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-extrabold text-white">
+                    Acessar Conta
+                </h1>
+                <p class="text-slate-400 mt-2">
+                    Insira seu e-mail e senha para continuar
+                </p>
+            </div>
+
+            <!-- 
+                AJUSTADO: Ação aponta para o script de processamento do login
+                Método: GET (para o exemplo)
+            -->
+            <form action="login_processor.php" method="GET" class="space-y-6">
+                
+                <!-- Campo de E-mail/Login -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-slate-300 mb-1">E-mail/Login</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="seu.email@exemplo.com"
+                        required 
+                        class="w-full p-3 border border-slate-700 rounded-lg bg-slate-700 text-white placeholder-slate-400 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
+                    >
+                    <!-- O atributo name="email" é usado no PHP -->
+                </div>
+
+                <!-- Campo de Senha -->
+                <div>
+                    <label for="senha" class="block text-sm font-medium text-slate-300 mb-1">Senha</label>
+                    <input 
+                        type="password" 
+                        id="senha" 
+                        name="senha" 
+                        placeholder="********"
+                        required 
+                        class="w-full p-3 border border-slate-700 rounded-lg bg-slate-700 text-white placeholder-slate-400 focus:ring-indigo-500 focus:border-indigo-500 transition duration-150 ease-in-out"
+                    >
+                    <!-- O atributo name="senha" é usado no PHP -->
+                </div>
+
+                <!-- Botão de Login -->
+                <button 
+                    type="submit" 
+                    class="w-full py-3 px-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow-md transition duration-200 ease-in-out transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50"
+                >
+                    Entrar
+                </button>
+            </form>
+
+            <p class="text-center text-sm text-slate-400 mt-6">
+                Não tem uma conta? 
+                <a href="#" class="text-indigo-400 hover:text-indigo-300 font-medium transition duration-150">
+                    Cadastre-se
+                </a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
+
